@@ -13,3 +13,30 @@ h1, h2 {
     width: 100%;
     text-align: center;
 }
+
+.container-info {
+    width: 100%;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-border {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.label {
+    position: absolute;
+    top: -27px;
+    left: 10px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.philo {
+    padding-top: 20px;
+}
