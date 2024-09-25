@@ -29,8 +29,37 @@ export class AppComponent {
     lovelyIcon: boolean = true;
     verySadIcon: boolean = true
 
-    paraPhilo = ''
+    paraPhilo: string = ''
+    paraPositive: string = ''
+    statistiques: number = Math.floor(Math.random() * 100000);
 
+    defis: string[] = [
+      'Faire 10 pompes sans les mains.',
+      'Faire un footing de 4 heures.',
+      'Snob les gens toute la journée.',
+      'Traverse une autoroute les yeux bandés',
+      'Demande un McFlurry à BurgerKing',
+      'Fait du saut en parachute depuis un pont',
+    ]
+
+    filmsSeries = [
+      "Inception",
+      "Breaking Bad",
+      "The Dark Knight",
+      "Game of Thrones",
+      "The Matrix",
+      "Stranger Things",
+      "The Godfather",
+      "The Mandalorian",
+      "Pulp Fiction",
+      "The Witcher"
+    ];
+
+    randomDefiIndex: number = Math.floor(Math.random() * this.defis.length)
+    defisDisplay = this.defis[this.randomDefiIndex]
+
+    randomFilmSeriesIndex: number = Math.floor(Math.random() * this.filmsSeries.length)
+    filmSeriesDisplay = this.filmsSeries[this.randomFilmSeriesIndex]
 
    
 
@@ -169,5 +198,7 @@ export class AppComponent {
       this.verySadIcon = true;
       this.humor = 'trés triste'
       this.paraPhilo = 'Au besoin, il y a une corde sous le lit.'
+      
     }
+
 }

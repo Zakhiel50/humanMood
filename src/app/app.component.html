@@ -12,7 +12,9 @@
   <img *ngIf="lovelyIcon" (click)="lovely()" class="icons" src="../assets/lovely.jpg" alt="">
 </section>
 
-<section *ngIf="display && sadIcon" class="container-info" style="background-color: bgc;">
+
+<h3  *ngIf="display && humor != ''">Tu es {{humor}}? Voici comment vous pouvez améliorer votre émotion.</h3>
+<section *ngIf="display" class="container-info" style="background-color: bgc;">
 
   <div class="col1">
   <div class="info-border1">
@@ -46,33 +48,34 @@
     </p>
   </div>
 
+  <p>{{paraPositive}}</p>
+
   <div class="info-border4">
     <p class="label">Citation</p>
-    <p>15 minute de Yoga</p>
+    <p>{{paraPhilo}}</p>
   </div>
 </div>
 
   <div class="col3">
   <div class="info-border5">
     <p class="label">Films ou séries</p>
-    <p>15 minute de Yoga</p>
+    <p>{{filmSeriesDisplay}}</p>
   </div>
 
   <div class="info-border6">
     <p class="label"> Défi du jour</p>
-    <p>15 minute de Yoga</p>
+    <p>{{defisDisplay}}</p>
   </div>
 
   <div class="info-border7">
     <p class="label">Statistiques</p>
-    <p>15 minute de Yoga</p>
+    <p>Il y a actuellement {{statistiques}} personnes qui partagent ton émotion.</p>
   </div>
 </div>
 
 </section>
 
 
-  <h3  *ngIf="display && humor != ''">Tu es {{humor}}? Voici comment vous pouvez améliorer votre émotion.</h3>
 
 
   <section *ngIf="display && sadIcon" class="container-info" style="background-color: bgc;">
