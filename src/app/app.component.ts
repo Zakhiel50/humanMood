@@ -1,18 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title: string = 'humanMood';
     user: string = "Bernard";
 
+    chatGPTResponse: any; // Stocke la réponse JSON ici
+
+    name: string = 'john';
+    surname: string = 'doe';
+
     display: boolean = false;
-    bgc: string = "red"
+
+    humor: string = ""
 
     happyIcon: boolean = true;
     sadIcon: boolean = true;
@@ -24,6 +29,10 @@ export class AppComponent {
     lovelyIcon: boolean = true;
     verySadIcon: boolean = true
 
+    paraPhilo = ''
+
+
+   
 
     happy() {
       this.display = true
@@ -36,6 +45,8 @@ export class AppComponent {
       this.sickIcon = false;
       this.lovelyIcon = false;
       this.verySadIcon = false;
+      this.humor= 'heureux'
+      this.paraPhilo = 'Voir la vie du bon côté, so good :)'
     }
 
     sad() {
@@ -49,6 +60,8 @@ export class AppComponent {
       this.sickIcon = false;
       this.lovelyIcon = false;
       this.verySadIcon = false;
+      this.humor = 'triste'
+      this.paraPhilo = 'Il y a mille fois pire que ça. La guerre au Mali.'
     }
 
     angry() {
@@ -62,6 +75,8 @@ export class AppComponent {
       this.sickIcon = false;
       this.lovelyIcon = false;
       this.verySadIcon = false;
+      this.humor = 'en colère'
+      this.paraPhilo = 'Oh il est en colère le pauvre petit?'
     }
 
     laugther() {
@@ -75,6 +90,8 @@ export class AppComponent {
       this.sickIcon = false;
       this.lovelyIcon = false;
       this.verySadIcon = false;    
+      this.humor = 'mort de rire'
+      this.paraPhilo = "C'est l'histoire d'un mec qui rentre dans un bar."
     }
 
     funny() {
@@ -88,6 +105,8 @@ export class AppComponent {
       this.sickIcon = false;
       this.lovelyIcon = false;
       this.verySadIcon = false;
+      this.humor = 'excité'
+      this.paraPhilo = "C'est la fête."
     }
 
     jaded() {
@@ -101,6 +120,8 @@ export class AppComponent {
       this.sickIcon = false;
       this.lovelyIcon = false;
       this.verySadIcon = false;
+      this.humor = 'blasé'
+      this.paraPhilo = 'Il y à des jours comme ça.'
     }
 
     sick() {
@@ -114,6 +135,9 @@ export class AppComponent {
       this.sickIcon = true;
       this.lovelyIcon = false;
       this.verySadIcon = false;
+      this.humor = 'malade'
+      this.paraPhilo = 'Les toilettes ne sont pas loin, courage.'
+
     }
 
     lovely() {
@@ -127,6 +151,9 @@ export class AppComponent {
       this.sickIcon = false;
       this.lovelyIcon = true;
       this.verySadIcon = false;
+      this.humor = 'amoureux'
+      this.paraPhilo = "Comment il / elle s'appelle?"
+
     }
 
     verySad() {
@@ -140,11 +167,7 @@ export class AppComponent {
       this.sickIcon = false;
       this.lovelyIcon = false;
       this.verySadIcon = true;
+      this.humor = 'trés triste'
+      this.paraPhilo = 'Au besoin, il y a une corde sous le lit.'
     }
-
-
-    constructor(
-      private httpClient: HttpClient,
-    ) { }
-  
-  }
+}
