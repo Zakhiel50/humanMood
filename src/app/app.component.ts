@@ -30,6 +30,38 @@ export class AppComponent {
     verySadIcon: boolean = true
 
     paraPhilo = ''
+    paraPositive: string = ''
+    statistiques: number = Math.floor(Math.random() * 100000);
+
+    defis: string[] = [
+      'Faire 10 pompes sans les mains.',
+      'Faire un footing de 4 heures.',
+      'Snob les gens toute la journée.',
+      'Traverse une autoroute les yeux bandés',
+      'Demande un McFlurry à BurgerKing',
+      'Fait du saut en parachute depuis un pont',
+    ]
+
+    filmsSeries = [
+      "Inception",
+      "Breaking Bad",
+      "The Dark Knight",
+      "Game of Thrones",
+      "The Matrix",
+      "Stranger Things",
+      "The Godfather",
+      "The Mandalorian",
+      "Pulp Fiction",
+      "The Witcher"
+    ];
+
+    randomDefiIndex: number = Math.floor(Math.random() * this.defis.length)
+    defisDisplay = this.defis[this.randomDefiIndex]
+
+    randomFilmSeriesIndex: number = Math.floor(Math.random() * this.filmsSeries.length)
+    filmSeriesDisplay = this.filmsSeries[this.randomFilmSeriesIndex]
+
+    
     imageMusique1 = ''
     titreMusique1 = ''
     imageMusique2 = ''
@@ -80,6 +112,7 @@ export class AppComponent {
       this.verySadIcon = false;
       this.humor = 'triste'
       this.paraPhilo = 'Il y a mille fois pire que ça. La guerre au Mali.'
+      
       this.imageMusique1 = '../assets/musique-sad-1.png'
       this.titreMusique1 = 'BYOB - System of a Down'
       this.imageMusique2 = '../assets/musique-sad-2.png'
