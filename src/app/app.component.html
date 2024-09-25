@@ -15,19 +15,26 @@
 
   <h3  *ngIf="display && humor != ''">Tu es {{humor}}? Voici comment vous pouvez améliorer votre émotion.</h3>
 
-  <section *ngIf="display" class="container-info" style="background-color: bgc;">
-    <div class="info-border">
+
+  <section *ngIf="display && sadIcon" class="container-info" style="background-color: bgc;">
+
+    <div class="col1">
+    <div class="info-border1">
       <p class="label">Musique</p>
-      <iframe width="97%" height="auto" src="https://www.youtube.com/embed/7fUtD40GqGY?si=219i-DHq9E-TJ79R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+      <p>BYOB - System of a Down</p>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7fUtD40GqGY?si=219i-DHq9E-TJ79R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
     </div>
 
     <div class="info-border">
       <p class="label">Philosophie</p>
-      <p class="text">{{paraPhilo}}</p>
+      <p>Respire profondément, car la colère est souvent un nuage qui obscurcit la clarté de l'esprit.</p>
     </div>
 
     <div class="info-border">
       <p class="label">Sport</p>
-      <iframe width="97%" height="auto" src="https://www.youtube.com/embed/CA5wTlsn6ek?si=ENMCwaqPIMcFNbVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>15 minute de Yoga</p>
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/CA5wTlsn6ek?si=ENMCwaqPIMcFNbVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+  </div>
+
   </section>

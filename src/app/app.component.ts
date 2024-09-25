@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -171,6 +170,4 @@ export class AppComponent {
       this.humor = 'trés triste'
       this.paraPhilo = 'Au besoin, il y a une corde sous le lit.'
     }
-
-
 }
