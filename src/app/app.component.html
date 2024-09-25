@@ -12,21 +12,62 @@
   <img *ngIf="lovelyIcon" (click)="lovely()" class="icons" src="../assets/lovely.jpg" alt="">
 </section>
 
-  <section *ngIf="display" class="container-info" style="background-color: bgc;">
-    <div class="info-border">
+
+  <section *ngIf="display && sadIcon" class="container-info" style="background-color: bgc;">
+
+    <div class="col1">
+    <div class="info-border1">
       <p class="label">Musique</p>
+      <div class="musique">
+        <img src="../assets/musique-sad-1.png">
       <p>BYOB - System of a Down</p>
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7fUtD40GqGY?si=219i-DHq9E-TJ79R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+      </div>
+
+      <div class="musique">
+        <img src="../assets/musique-sad-2.png">
+      <p>KlLEM - Message</p>
+      </div>
     </div>
 
-    <div class="info-border">
-      <p class="label">Philosophie</p>
-      <p>Respire profondément, car la colère est souvent un nuage qui obscurcit la clarté de l'esprit.</p>
+    <div class="info-border2">
+      <p class="label">GIF</p>
+      <img src="https://www.gifimili.com/gif/2018/03/stitch-triste.gif" border="0" alt="Stitch triste">
+    </div>
+  </div>
+
+  <div class="col2">
+    <div class="info-border3">
+      <p class="label">Conseils humeurs</p>
+      <p><strong>1. Adopte des habitudes positive</strong><br><br>
+        Pratique la gratitude : Chaque jour, note trois choses pour lesquelles tu es reconnaissant(e). Cela aide à recentrer ton esprit sur le positif.
+        Méditation ou pleine conscience : Ces pratiques permettent de calmer ton esprit, de réduire le stress et d'améliorer ta concentration.
+        <br><br>
+        <strong>2. Fais de l'exercice régulièrement<br><br></strong>
+        Activité physique : Le sport libère des endorphines, des hormones qui procurent une sensation de bien-être. Même une petite marche quotidienne peut améliorer ton humeur.
+      </p>
     </div>
 
-    <div class="info-border">
-      <p class="label">Sport</p>
+    <div class="info-border4">
+      <p class="label">Citation</p>
       <p>15 minute de Yoga</p>
-      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/CA5wTlsn6ek?si=ENMCwaqPIMcFNbVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+  </div>
+
+    <div class="col3">
+    <div class="info-border5">
+      <p class="label">Films ou séries</p>
+      <p>15 minute de Yoga</p>
+    </div>
+
+    <div class="info-border6">
+      <p class="label"> Défi du jour</p>
+      <p>15 minute de Yoga</p>
+    </div>
+
+    <div class="info-border7">
+      <p class="label">Statistiques</p>
+      <p>15 minute de Yoga</p>
+    </div>
+  </div>
+
   </section>

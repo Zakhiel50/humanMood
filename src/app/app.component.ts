@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -140,4 +141,10 @@ export class AppComponent {
       this.lovelyIcon = false;
       this.verySadIcon = true;
     }
-}
+
+
+    constructor(
+      private httpClient: HttpClient,
+    ) { }
+  
+  }
