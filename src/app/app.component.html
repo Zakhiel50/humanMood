@@ -18,37 +18,37 @@
   <div class="info-border1">
     <p class="label">Musique</p>
     <div class="musique">
-      <img src="../assets/musique-sad-1.png">
-    <p>BYOB - System of a Down</p>
+      <img src= "{{ imageMusique1 }}">
+    <p>{{ titreMusique1 }}</p>
     </div>
 
     <div class="musique">
-      <img src="../assets/musique-sad-2.png">
-    <p>KlLEM - Message</p>
+      <img src= "{{ imageMusique2 }}">
+    <p>{{ titreMusique2 }}</p>
     </div>
   </div>
 
   <div class="info-border2">
     <p class="label">GIF</p>
-    <img src="https://www.gifimili.com/gif/2018/03/stitch-triste.gif" border="0" alt="Stitch triste">
+    <img src="{{ GIF }}" border="0" alt="Stitch triste">
   </div>
 </div>
 
 <div class="col2">
   <div class="info-border3">
     <p class="label">Conseils humeurs</p>
-    <p><strong>1. Adopte des habitudes positive</strong><br><br>
-      Pratique la gratitude : Chaque jour, note trois choses pour lesquelles tu es reconnaissant(e). Cela aide à recentrer ton esprit sur le positif.
-      Méditation ou pleine conscience : Ces pratiques permettent de calmer ton esprit, de réduire le stress et d'améliorer ta concentration.
-      <br><br>
-      <strong>2. Fais de l'exercice régulièrement<br><br></strong>
-      Activité physique : Le sport libère des endorphines, des hormones qui procurent une sensation de bien-être. Même une petite marche quotidienne peut améliorer ton humeur.
+    <p><strong>{{ titreConseil1 }}</strong><br><br>
+     {{ conseil1 }}
+     <br>
+     <br>
+      <strong> {{ titreConseil2 }}<br><br></strong>
+      {{ conseil2 }}
     </p>
   </div>
 
   <div class="info-border4">
     <p class="label">Citation</p>
-    <p>15 minute de Yoga</p>
+    <p> {{ paraPhilo }} </p>
   </div>
 </div>
 

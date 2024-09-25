@@ -112,10 +112,21 @@ h1, h2 {
     border-radius: 10px;
     width: 100% !important;
     text-align: center;
+    justify-content: center;
+    display: flex;
     width: 20%;
     background-color: #F7F7F7;
     height: 100px;
 }
+
+.info-border4 p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
 
 .info-border5 {
     position: relative;

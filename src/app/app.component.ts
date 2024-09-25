@@ -30,6 +30,15 @@ export class AppComponent {
     verySadIcon: boolean = true
 
     paraPhilo = ''
+    imageMusique1 = ''
+    titreMusique1 = ''
+    imageMusique2 = ''
+    titreMusique2 = ''
+    GIF = ''
+    titreConseil1 = ''
+    titreConseil2 = ''
+    conseil1 = ''
+    conseil2 = ''
 
 
    
@@ -47,6 +56,16 @@ export class AppComponent {
       this.verySadIcon = false;
       this.humor= 'heureux'
       this.paraPhilo = 'Voir la vie du bon côté, so good :)'
+
+      this.imageMusique1 = '../assets/musique-sad-1.png'
+      this.titreMusique1 = 'BYOB - System of a Down'
+      this.imageMusique2 = '../assets/musique-sad-2.png'
+      this.titreMusique2 = 'KLEM - Message'
+      this.GIF = "https://www.gifimili.com/gif/2018/03/stitch-triste.gif"
+      this.titreConseil1 = '1. Adopte des habitudes positive'
+      this.titreConseil2 = '2. Fais de l\'exercice régulièrement'
+      this.conseil1 = "Pratique la gratitude : Chaque jour, note trois choses pour lesquelles tu es reconnaissant(e). Cela aide à recentrer ton esprit sur le positif. Méditation ou pleine conscience : Ces pratiques permettent de calmer ton esprit, de réduire le stress et d'améliorer ta concentration."
+      this.conseil2 = "Activité physique : Le sport libère des endorphines, des hormones qui procurent une sensation de bien-être. Même une petite marche quotidienne peut améliorer ton humeur."
     }
 
     sad() {
@@ -62,6 +81,15 @@ export class AppComponent {
       this.verySadIcon = false;
       this.humor = 'triste'
       this.paraPhilo = 'Il y a mille fois pire que ça. La guerre au Mali.'
+      this.imageMusique1 = '../assets/musique-sad-1.png'
+      this.titreMusique1 = 'BYOB - System of a Down'
+      this.imageMusique2 = '../assets/musique-sad-2.png'
+      this.titreMusique2 = 'KLEM - Message'
+      this.GIF = "https://www.gifimili.com/gif/2018/03/stitch-triste.gif"
+      this.titreConseil1 = '1. Adopte des habitudes positive'
+      this.titreConseil2 = '2. Fais de l\'exercice régulièrement'
+      this.conseil1 = "Pratique la gratitude : Chaque jour, note trois choses pour lesquelles tu es reconnaissant(e). Cela aide à recentrer ton esprit sur le positif. Méditation ou pleine conscience : Ces pratiques permettent de calmer ton esprit, de réduire le stress et d'améliorer ta concentration."
+      this.conseil2 = "Activité physique : Le sport libère des endorphines, des hormones qui procurent une sensation de bien-être. Même une petite marche quotidienne peut améliorer ton humeur."
     }
 
     angry() {
