@@ -40,7 +40,6 @@ export class AppComponent {
     conseil1 = ''
     conseil2 = ''
 
-
    
 
     happy() {
@@ -197,5 +196,7 @@ export class AppComponent {
       this.verySadIcon = true;
       this.humor = 'trés triste'
       this.paraPhilo = 'Au besoin, il y a une corde sous le lit.'
+      
     }
+
 }
